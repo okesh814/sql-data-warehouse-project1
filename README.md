@@ -30,3 +30,7 @@ Develop SQL-based analytics to deliver detailed insights into:
 -**Sales Trends**
 
 These insights empower stakeholders with key business metrics,enabiling strategic decision-making
+
+<img width="4580" height="1916" alt="image" src="https://github.com/user-attachments/assets/bbcc85d8-7fbd-4dda-ae6a-7e69a7ad365f" />
+![Uploading image.png…]()
+
