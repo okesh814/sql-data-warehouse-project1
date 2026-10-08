@@ -1,1 +1,13 @@
+---------------------------------------
+--CLEAN AND TRANSFORM THE DATA AND INSERT INTO TABLE
+SELECT * FROM bronze.crm_cust_info;
+--find duplicates in primary key (id)
+select cst_id,count(*) from bronze.crm_cust_info group by cst_id having count(*)>1;
 
+--find is thrie any extra space in firstname and lastname
+SELECT CST_FIRSTNAME FROM BRONZE.CRM_CUST_INFO
+WHERE CST_FIRSTNAME!=TRIM(CST_FIRSTNAME);
+
+--IN SILVER TABLE WE AIM TO STORE CLEAR ANDD MEANINGFUL VALUES RATHER THAN USING ABBREVTEDTERMS
+SELECT DISTINCT CST_MATERIAL_STATUS FROM BRONZE.CRM_CUST_INFO;
+SELECT DISTINCT CST_GNDR FROM BRONZE.CRM_CUST_INFO;
